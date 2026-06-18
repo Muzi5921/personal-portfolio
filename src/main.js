@@ -1,3 +1,4 @@
+import './archives-intro.js';
 import './styles.css';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
@@ -204,7 +205,7 @@ function initTechCube() {
   const renderer = createRenderer(canvas);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
-  camera.position.set(0, 0.6, 6);
+  camera.position.set(0, 0.5, 5.45);
 
   const group = new THREE.Group();
   const targetRotation = { x: 0, y: 0 };
@@ -289,7 +290,16 @@ function initTechCube() {
   violetLight.position.set(-4, -2, 4);
   scene.add(violetLight);
 
-  const resize = () => sizeRenderer(renderer, camera);
+  const resize = () => {
+    const container = renderer.domElement.parentElement;
+    const width = container?.clientWidth || window.innerWidth;
+    const scale = width < 520 ? 0.94 : width < 760 ? 1 : 1.04;
+
+    group.scale.setScalar(scale);
+    camera.position.z = width < 520 ? 6.05 : width < 760 ? 5.75 : 5.4;
+    camera.position.y = width < 520 ? 0.52 : 0.48;
+    sizeRenderer(renderer, camera);
+  };
   window.addEventListener('resize', resize);
   resize();
 

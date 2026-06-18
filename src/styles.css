@@ -143,9 +143,9 @@ button {
 
 .hero-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1.18fr);
   align-items: center;
-  gap: clamp(32px, 5vw, 72px);
+  gap: clamp(20px, 3.5vw, 56px);
 }
 
 .eyebrow,
@@ -167,10 +167,10 @@ p {
 }
 
 h1 {
-  max-width: 760px;
-  margin-bottom: 24px;
-  font-size: clamp(2.8rem, 7vw, 6.8rem);
-  line-height: 0.98;
+  max-width: 720px;
+  margin-bottom: 22px;
+  font-size: clamp(2.55rem, 5.25vw, 5.2rem);
+  line-height: 1.08;
   text-shadow: 0 0 34px rgba(54, 242, 255, 0.34);
 }
 
@@ -229,7 +229,8 @@ h3 {
 
 .hero-visual {
   position: relative;
-  min-height: clamp(420px, 58vw, 680px);
+  min-height: clamp(500px, 56vw, 700px);
+  margin-left: clamp(-28px, -1.4vw, -12px);
 }
 
 #tech-cube,
@@ -242,8 +243,8 @@ h3 {
 
 .scan-panel {
   position: absolute;
-  right: 7%;
-  bottom: 12%;
+  right: 5%;
+  bottom: 10%;
   width: min(250px, 72vw);
   padding: 18px;
   border: 1px solid var(--line);
@@ -2642,6 +2643,7 @@ h3 {
 
   .hero-visual {
     min-height: 460px;
+    margin-left: 0;
   }
 
   .resume-side {
@@ -2692,7 +2694,7 @@ h3 {
   }
 
   .hero-visual {
-    min-height: 360px;
+    min-height: 400px;
   }
 
   .blog-grid,
