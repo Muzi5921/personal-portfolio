@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="科技感个人作品集，包含博客、项目、简历与联系方式。"
+    />
+    <title>个人作品集 | 数据流作品集</title>
+  </head>
+  <body>
+    <canvas id="particle-bg" aria-hidden="true"></canvas>
+    <div id="app">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="返回首页">
+          <span class="brand-mark"></span>
+          <span>霓虹档案</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu" aria-label="主导航">
+          <a href="#home">首页</a>
+          <a href="#about">关于我</a>
+          <a href="#blog">博客</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+          <a href="#resume">简历</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section hero-section" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">数据流个人作品集</p>
+            <h1>在蓝紫色数据流里，展示我的技术、作品与想法。</h1>
+            <p class="hero-text">
+              一个面向开发者与创作者的个人作品集：Three.js 科技魔方、GSAP
+              滚动动效、博客内容、项目档案与在线简历。
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">查看作品</a>
+              <a class="btn ghost" href="#resume">在线简历</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <canvas id="tech-cube" aria-label="3D科技魔方"></canvas>
+            <div class="scan-panel">
+              <span>核心状态</span>
+              <strong>在线运行</strong>
+              <small>三维场景 / 滚动动效 / 数据流</small>
+            </div>
+          </div>
+          <div class="scroll-hint">向下滚动</div>
+        </section>
+
+        <section class="section about-section" id="about">
+          <div class="about-data-rain" aria-hidden="true">
+            <span>0101</span><span>AI</span><span>2037</span><span>DATA</span><span>翔宇</span>
+            <span>1010</span><span>WEB</span><span>CREATE</span><span>PIXEL</span><span>CORE</span>
+          </div>
+          <div class="section-heading about-heading">
+            <p class="eyebrow">沉浸式个人档案</p>
+            <h2 class="scan-title">关于我</h2>
+            <p class="about-lead">
+              从数据流中读取身份信息，把灵感、AI 创作和网页设计连接成可被看见的现实。
+            </p>
+          </div>
+
+          <div class="about-archive">
+            <article class="glass-panel profile-panel data-card">
+              <dl class="profile-meta profile-meta-large">
+                <div><dt>姓名</dt><dd>李翔宇</dd></div>
+                <div><dt>职业</dt><dd>预算员</dd></div>
+                <div><dt>性格</dt><dd>好奇、专注、乐于探索</dd></div>
+              </dl>
+            </article>
+
+            <div class="identity-core glass-panel">
+              <canvas id="identity-core" aria-label="3D数字身份核心"></canvas>
+              <div class="core-ring"></div>
+              <div class="core-caption">
+                <span>数字身份核心</span>
+                <strong>李翔宇</strong>
+              </div>
+            </div>
+
+            <article class="glass-panel profile-panel data-card">
+              <dl class="profile-meta profile-meta-large">
+                <div><dt>爱好</dt><dd>AI创作、动漫、美食</dd></div>
+                <div><dt>理念</dt><dd>把灵感变成现实</dd></div>
+                <div><dt>目标</dt><dd>持续学习，创造有价值的数字作品</dd></div>
+              </dl>
+            </article>
+          </div>
+
+          <div class="about-subhead">
+            <p class="eyebrow">技能展示</p>
+            <h3>悬浮技能矩阵</h3>
+          </div>
+          <div class="skill-matrix">
+            <article class="glass-panel skill-card" style="--level: 60%">
+              <span>AI绘画</span>
+              <strong>★★★☆☆</strong>
+              <em>熟练度 60%</em>
+              <i></i>
+            </article>
+            <article class="glass-panel skill-card" style="--level: 40%">
+              <span>网站设计</span>
+              <strong>★★☆☆☆</strong>
+              <em>熟练度 40%</em>
+              <i></i>
+            </article>
+            <article class="glass-panel skill-card" style="--level: 20%">
+              <span>前端开发</span>
+              <strong>★☆☆☆☆</strong>
+              <em>熟练度 20%</em>
+              <i></i>
+            </article>
+            <article class="glass-panel skill-card" style="--level: 60%">
+              <span>插画设计</span>
+              <strong>★★★☆☆</strong>
+              <em>熟练度 60%</em>
+              <i></i>
+            </article>
+          </div>
+
+          <div class="about-subhead timeline-heading">
+            <p class="eyebrow">成长路径</p>
+            <h3>垂直数据流时间线</h3>
+          </div>
+          <div class="timeline vertical-timeline glass-panel">
+            <div class="timeline-item">
+              <span>阶段 01</span>
+              <p>开始接触 AI 创作工具，用提示词和图像生成建立自己的灵感库。</p>
+            </div>
+            <div class="timeline-item">
+              <span>阶段 02</span>
+              <p>学习网站设计和视觉排版，把作品、想法和个人档案整理成网页结构。</p>
+            </div>
+            <div class="timeline-item">
+              <span>阶段 03</span>
+              <p>尝试前端开发、Three.js 和滚动动效，让页面具备更强的交互表现。</p>
+            </div>
+            <div class="timeline-item">
+              <span>阶段 04</span>
+              <p>持续沉淀项目经验，将 AI 数据训练、创作审美和网页体验结合起来。</p>
+            </div>
+          </div>
+
+          <div class="belief-zone">
+            <p>把灵感变成现实</p>
+          </div>
+
+          <div class="chip-cloud" aria-label="个人标签">
+            <span>AI Creator</span>
+            <span>Web Designer</span>
+            <span>Illustrator</span>
+            <span>Frontend Learner</span>
+            <span>Creative Explorer</span>
+          </div>
+
+          <div class="identity-badge glass-panel">
+            <span></span>
+            <strong>LI XIANGYU</strong>
+            <small>AI DATA TRAINER · CREATIVE ARCHIVE ONLINE</small>
+          </div>
+        </section>
+
+        <section class="section blog-section" id="blog">
+          <div class="blog-data-rain" aria-hidden="true">
+            <span>POST</span><span>AI</span><span>NOTE</span><span>0101</span><span>READ</span>
+            <span>WEB</span><span>LOG</span><span>2026</span><span>DATA</span><span>BOOK</span>
+          </div>
+          <div class="section-heading blog-heading">
+            <p class="eyebrow">数字知识库</p>
+            <h2 class="blog-scan-title">博客文章</h2>
+            <p class="blog-subtitle">记录技术、学习、项目与生活的数字档案</p>
+          </div>
+
+          <div class="blog-filter-bar" aria-label="文章分类导航">
+            <button class="blog-filter is-active" type="button" data-category="全部">全部</button>
+            <button class="blog-filter" type="button" data-category="技术笔记">技术笔记</button>
+            <button class="blog-filter" type="button" data-category="学习记录">学习记录</button>
+            <button class="blog-filter" type="button" data-category="项目复盘">项目复盘</button>
+            <button class="blog-filter" type="button" data-category="生活随笔">生活随笔</button>
+            <button class="blog-filter" type="button" data-category="读书/观影记录">读书/观影记录</button>
+          </div>
+
+          <div class="blog-hero-grid">
+            <div class="blog-terminal glass-panel">
+              <label for="blog-search">AI 终端搜索</label>
+              <div class="blog-search-shell">
+                <span>&gt;</span>
+                <input id="blog-search" type="search" placeholder="输入关键词搜索文章..." />
+              </div>
+              <p>支持按标题、分类、摘要实时筛选数字档案。</p>
+            </div>
+            <div class="blog-core glass-panel">
+              <canvas id="blog-core" aria-label="3D数据书本核心"></canvas>
+              <div class="ai-face-core" aria-hidden="true">
+                <div class="ai-face-halo"></div>
+                <div class="ai-face">
+                  <span class="face-brow left"></span>
+                  <span class="face-brow right"></span>
+                  <span class="face-eye left"></span>
+                  <span class="face-eye right"></span>
+                  <span class="face-nose"></span>
+                  <span class="face-mouth"></span>
+                  <span class="face-wire horizontal"></span>
+                  <span class="face-wire vertical"></span>
+                  <i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <div class="ai-face-scan"></div>
+              </div>
+              <div class="blog-core-caption">
+                <span>文章核心</span>
+                <strong>知识持续积累</strong>
+                <small id="blog-core-status">等待检索指令</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-subhead">
+            <p class="eyebrow">精选文章</p>
+            <h3>全息文章卡片</h3>
+          </div>
+          <div class="blog-grid featured-blog-grid" id="blog-list"></div>
+
+          <div class="about-subhead">
+            <p class="eyebrow">分类内容</p>
+            <h3>五类数字档案</h3>
+          </div>
+          <div class="blog-category-grid">
+            <article class="glass-panel blog-category-card">
+              <span>技术笔记</span>
+              <p>记录代码、前端、AI工具、网页开发经验。</p>
+            </article>
+            <article class="glass-panel blog-category-card">
+              <span>学习记录</span>
+              <p>记录学习计划、课程笔记、阶段总结。</p>
+            </article>
+            <article class="glass-panel blog-category-card">
+              <span>项目复盘</span>
+              <p>记录项目目标、制作过程、问题解决和优化思路。</p>
+            </article>
+            <article class="glass-panel blog-category-card">
+              <span>生活随笔</span>
+              <p>记录日常灵感、兴趣、美食、动漫和个人感受。</p>
+            </article>
+            <article class="glass-panel blog-category-card">
+              <span>读书/观影记录</span>
+              <p>记录书籍、电影、动画、纪录片的心得和摘录。</p>
+            </article>
+          </div>
+
+          <div class="about-subhead">
+            <p class="eyebrow">时间轴归档</p>
+            <h3>数据流文章归档</h3>
+          </div>
+          <div class="blog-timeline glass-panel">
+            <div class="blog-timeline-item"><span>2026.06</span><p>个人作品集 3.0 页面结构与科技视觉升级记录。</p></div>
+            <div class="blog-timeline-item"><span>2026.05</span><p>AI 绘画提示词整理，以及风格参考库的建立方法。</p></div>
+            <div class="blog-timeline-item"><span>2026.04</span><p>学习前端基础时遇到的布局、动画和响应式问题。</p></div>
+            <div class="blog-timeline-item"><span>2026.03</span><p>动漫、美食和日常灵感如何转化为视觉创作主题。</p></div>
+          </div>
+
+          <div class="blog-knowledge-core glass-panel">
+            <span></span>
+            <strong>持续记录，持续进化。</strong>
+          </div>
+        </section>
+
+        <section class="section projects-section" id="projects">
+          <div class="project-data-rain" aria-hidden="true">
+            <span>BUILD</span><span>WEB</span><span>AI</span><span>CODE</span><span>UI</span>
+            <span>GSAP</span><span>3D</span><span>FLOW</span><span>OPEN</span><span>CORE</span>
+          </div>
+          <div class="section-heading project-heading">
+            <p class="eyebrow">数字作品库</p>
+            <h2 class="project-scan-title">项目作品</h2>
+            <p class="project-subtitle">把想法、设计、代码和 AI 创作整理成可交互的作品档案。</p>
+          </div>
+
+          <div class="project-core-stage glass-panel">
+            <canvas id="project-core" aria-label="3D项目核心"></canvas>
+            <div class="project-core-fallback" aria-hidden="true">
+              <div class="project-core-orbit"></div>
+              <div class="project-core-orbit second"></div>
+              <div class="project-core-gem">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="project-core-nodes">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="holo-platform" aria-hidden="true"></div>
+            <div class="project-core-caption">
+              <span>项目核心</span>
+              <strong>创意集合在线</strong>
+            </div>
+          </div>
+
+          <div class="project-filter-bar" aria-label="项目分类导航">
+            <button class="project-filter is-active" type="button" data-category="全部项目">全部项目</button>
+            <button class="project-filter" type="button" data-category="网页作品">网页作品</button>
+            <button class="project-filter" type="button" data-category="AI创作">AI创作</button>
+            <button class="project-filter" type="button" data-category="前端练习">前端练习</button>
+            <button class="project-filter" type="button" data-category="品牌设计">品牌设计</button>
+          </div>
+
+          <div class="project-grid" id="project-grid"></div>
+
+          <div class="project-library-core glass-panel">
+            <span></span>
+            <strong>每一个项目，都是一次能力进化。</strong>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <canvas id="bird-transition" aria-hidden="true"></canvas>
+          <div class="contact-data-rain" aria-hidden="true">
+            <span>LINK</span><span>MAIL</span><span>SIGNAL</span><span>0101</span><span>BIRD</span>
+            <span>RED</span><span>WECHAT</span><span>FLOW</span><span>ONLINE</span><span>CORE</span>
+          </div>
+
+          <div class="section-heading contact-heading">
+            <p class="eyebrow">数字通讯网络</p>
+            <h2 class="contact-scan-title">联系方式</h2>
+          </div>
+
+          <div class="contact-core-stage glass-panel">
+            <video class="contact-core-video" src="/contact-core-video.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+            <canvas id="contact-core" aria-label="3D通讯核心"></canvas>
+            <div class="contact-network-lines" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="contact-core-caption">
+              <span>通讯核心</span>
+              <strong>Signal Online</strong>
+            </div>
+          </div>
+
+          <div class="social-card-grid">
+            <article class="social-card metal-card" data-social-card>
+              <div class="social-icon">E</div>
+              <span>Email</span>
+              <h3>邮箱</h3>
+              <p id="email-address">1561853965@qq.com</p>
+              <button class="btn ghost pulse-link" type="button" id="copy-email">复制邮箱</button>
+            </article>
+
+            <article class="social-card metal-card" data-social-card>
+              <div class="social-icon">B</div>
+              <span>Bilibili</span>
+              <h3>B站</h3>
+              <p>阿白mvp</p>
+              <a class="btn primary pulse-link" href="https://space.bilibili.com/" target="_blank" rel="noreferrer">访问主页</a>
+            </article>
+
+            <article class="social-card metal-card" data-social-card>
+              <div class="social-icon">R</div>
+              <span>REDnote</span>
+              <h3>小红书</h3>
+              <p>木子</p>
+              <a class="btn primary pulse-link" href="https://www.xiaohongshu.com/" target="_blank" rel="noreferrer">访问账号</a>
+            </article>
+
+            <article class="social-card metal-card wechat-card" data-social-card>
+              <div class="social-icon">W</div>
+              <span>WeChat</span>
+              <h3>微信</h3>
+              <img class="wechat-qr-image qr-metal" src="/wechat-qr.jpg" alt="木子羊宇微信二维码" />
+            </article>
+          </div>
+
+          <div class="contact-terminal glass-panel">
+            <span>&gt; message.channel.open</span>
+            <p>欢迎交流 AI 创作、网页设计、插画、美食与创意项目。</p>
+          </div>
+
+          <div class="contact-finale glass-panel">
+            <div class="mini-bird" aria-hidden="true"><i></i><i></i><i></i></div>
+            <strong>Connection Established.</strong>
+          </div>
+
+          <div class="copy-toast" id="copy-toast" role="status" aria-live="polite">复制成功</div>
+        </section>
+
+        <section class="section resume-section" id="resume">
+          <div class="section-heading">
+            <p class="eyebrow">在线简历</p>
+            <h2>在线简历</h2>
+          </div>
+          <div class="resume-shell glass-panel">
+            <div class="resume-main">
+              <h3>李翔宇</h3>
+              <p>预算员 / AI 创作爱好者 / 数字作品探索者</p>
+            </div>
+            <aside class="resume-side">
+              <a class="btn primary" href="/resume.pdf" download>下载 PDF</a>
+              <span>点击下载完整自我介绍 PDF，了解个人经历、能力与作品方向。</span>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <div class="project-modal" id="project-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <article class="modal-body glass-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <button class="modal-close" type="button" data-close-modal aria-label="关闭">×</button>
+          <p class="eyebrow" id="modal-type"></p>
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+          <div class="project-detail-list" id="modal-details"></div>
+          <div class="modal-tags" id="modal-tags"></div>
+          <div class="modal-actions">
+            <a class="btn ghost" id="modal-link" href="#" target="_blank" rel="noreferrer">查看源码</a>
+            <a class="btn primary" id="modal-preview" href="#" target="_blank" rel="noreferrer">线上预览</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
