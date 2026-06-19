@@ -47,7 +47,7 @@
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     transition:opacity 1.2s ease;
   `;
-  subEl.textContent = 'DATA · FLOW · ARCHIVES';
+  subEl.textContent = '';
 
   const progressBar = document.createElement('div');
   progressBar.style.cssText = `
