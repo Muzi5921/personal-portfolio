@@ -11,8 +11,7 @@
   "dependencies": {
     "@vitejs/plugin-basic-ssl": "^2.1.0",
     "gsap": "^3.13.0",
-    "three": "^0.179.1",
-    "vite": "^7.1.5"
-  },
-  "devDependencies": {}
+    "three": "^0.184.0",
+    "vite": "^8.0.16"
+  }
 }

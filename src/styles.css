@@ -2821,3 +2821,180 @@ h3 {
     height: 24px;
   }
 }
+
+/* Vibrant spectrum layer --------------------------------------------------- */
+:root {
+  --coral: #ff6b6b;
+  --orange: #ff9f43;
+  --lime: #62f7a5;
+  --electric-pink: #ff3cac;
+  --spectrum: linear-gradient(110deg, var(--cyan), var(--lime), #ffe66d, var(--orange), var(--electric-pink), var(--violet));
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 14%, rgba(54, 242, 255, 0.18), transparent 25%),
+    radial-gradient(circle at 92% 18%, rgba(255, 60, 172, 0.18), transparent 24%),
+    radial-gradient(circle at 18% 72%, rgba(98, 247, 165, 0.12), transparent 25%),
+    radial-gradient(circle at 84% 82%, rgba(255, 159, 67, 0.14), transparent 28%),
+    linear-gradient(145deg, #040716 0%, #0b0924 48%, #071526 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  position: fixed;
+  inset: -30%;
+  z-index: 0;
+  content: "";
+  background: conic-gradient(from 90deg at 50% 50%, rgba(54, 242, 255, 0.07), rgba(255, 60, 172, 0.08), rgba(255, 159, 67, 0.06), rgba(98, 247, 165, 0.07), rgba(54, 242, 255, 0.07));
+  filter: blur(80px);
+  animation: spectrumDrift 24s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes spectrumDrift {
+  to { transform: rotate(360deg) scale(1.08); }
+}
+
+.site-header {
+  background: linear-gradient(180deg, rgba(5, 8, 23, 0.78), rgba(5, 8, 23, 0.38));
+  border-image: linear-gradient(90deg, transparent, rgba(54, 242, 255, 0.55), rgba(255, 60, 172, 0.5), transparent) 1;
+}
+
+.brand-mark {
+  border-color: var(--electric-pink);
+  background: linear-gradient(135deg, rgba(54, 242, 255, 0.55), rgba(255, 60, 172, 0.52));
+  box-shadow: 0 0 18px rgba(255, 60, 172, 0.64), inset 0 0 12px rgba(54, 242, 255, 0.78);
+}
+
+.nav-menu a:hover {
+  border-color: rgba(255, 60, 172, 0.38);
+  background: linear-gradient(135deg, rgba(54, 242, 255, 0.11), rgba(255, 60, 172, 0.1));
+  box-shadow: 0 0 22px rgba(255, 60, 172, 0.12);
+}
+
+.scan-title,
+.blog-scan-title,
+.project-scan-title,
+.contact-scan-title,
+.belief-zone p {
+  background-image: var(--spectrum);
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: spectrumText 8s ease-in-out infinite alternate;
+}
+
+@keyframes spectrumText {
+  to { background-position: 100% 50%; }
+}
+
+.btn.primary {
+  background: linear-gradient(120deg, var(--cyan), var(--lime) 32%, #ffe66d 62%, var(--electric-pink));
+  background-size: 180% 100%;
+  box-shadow: 0 8px 28px rgba(255, 60, 172, 0.18);
+}
+
+.btn.primary:hover {
+  background-position: 100% 50%;
+  border-color: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 34px rgba(54, 242, 255, 0.24), 0 0 24px rgba(255, 60, 172, 0.2);
+}
+
+.glass-panel,
+.blog-card,
+.project-card,
+.metal-card {
+  border-color: rgba(130, 210, 255, 0.25);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.07), transparent 42%),
+    linear-gradient(145deg, rgba(10, 20, 48, 0.78), rgba(18, 8, 38, 0.54));
+}
+
+.about-section {
+  background: radial-gradient(ellipse at 12% 46%, rgba(98, 247, 165, 0.08), transparent 34%);
+}
+
+.blog-section {
+  background: radial-gradient(ellipse at 88% 38%, rgba(255, 60, 172, 0.11), transparent 36%);
+}
+
+.projects-section {
+  background: radial-gradient(ellipse at 10% 52%, rgba(255, 159, 67, 0.1), transparent 34%);
+}
+
+.contact-section {
+  background: radial-gradient(ellipse at 86% 52%, rgba(98, 247, 165, 0.1), transparent 36%);
+}
+
+.skill-card:nth-child(4n + 1),
+.blog-card:nth-child(4n + 1),
+.project-card:nth-child(4n + 1),
+.metal-card:nth-child(4n + 1) { --card-accent: var(--cyan); }
+
+.skill-card:nth-child(4n + 2),
+.blog-card:nth-child(4n + 2),
+.project-card:nth-child(4n + 2),
+.metal-card:nth-child(4n + 2) { --card-accent: var(--electric-pink); }
+
+.skill-card:nth-child(4n + 3),
+.blog-card:nth-child(4n + 3),
+.project-card:nth-child(4n + 3),
+.metal-card:nth-child(4n + 3) { --card-accent: var(--orange); }
+
+.skill-card:nth-child(4n),
+.blog-card:nth-child(4n),
+.project-card:nth-child(4n),
+.metal-card:nth-child(4n) { --card-accent: var(--lime); }
+
+.skill-card,
+.blog-card,
+.project-card,
+.metal-card {
+  border-top-color: color-mix(in srgb, var(--card-accent, var(--cyan)) 68%, transparent);
+  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.25), inset 0 1px 0 color-mix(in srgb, var(--card-accent, var(--cyan)) 24%, transparent);
+}
+
+.skill-card:hover,
+.blog-card:hover,
+.project-card:hover,
+.metal-card:hover {
+  border-color: color-mix(in srgb, var(--card-accent, var(--cyan)) 72%, transparent);
+  box-shadow: 0 22px 70px color-mix(in srgb, var(--card-accent, var(--cyan)) 17%, transparent), 0 0 28px rgba(140, 92, 255, 0.12);
+}
+
+.blog-filter.is-active,
+.project-filter.is-active {
+  border-color: rgba(255, 60, 172, 0.62);
+  background: linear-gradient(120deg, rgba(54, 242, 255, 0.18), rgba(255, 60, 172, 0.2), rgba(255, 159, 67, 0.14));
+  box-shadow: 0 0 24px rgba(255, 60, 172, 0.16);
+}
+
+.skill-card i::before {
+  background: var(--spectrum);
+  background-size: 180% 100%;
+  animation: spectrumText 5s ease-in-out infinite alternate;
+}
+
+.chip-cloud span:nth-child(3n + 2) {
+  border-color: rgba(255, 60, 172, 0.32);
+  background: rgba(255, 60, 172, 0.08);
+}
+
+.chip-cloud span:nth-child(3n) {
+  border-color: rgba(255, 159, 67, 0.34);
+  background: rgba(255, 159, 67, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  .scan-title,
+  .blog-scan-title,
+  .project-scan-title,
+  .contact-scan-title,
+  .belief-zone p,
+  .skill-card i::before {
+    animation: none;
+  }
+}

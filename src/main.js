@@ -8,121 +8,121 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: '个人作品集 3.0',
-    type: '网页作品',
-    desc: '使用科技数据流视觉展示个人档案、博客文章、项目作品和联系方式。',
-    problem: '解决个人内容分散、作品展示缺少记忆点的问题。',
-    contribution: '负责页面设计、前端实现、Three.js 场景、滚动动画与内容整理。',
-    stack: ['HTML', 'CSS', 'JavaScript', 'Three.js', 'GSAP'],
-    github: 'https://github.com/yourname/neon-portfolio',
-    preview: 'https://example.com/portfolio',
-    process: '从视觉关键词出发搭建页面结构，再逐步接入 3D 核心、筛选交互和响应式布局。',
-    optimize: '后续可接入真实博客 CMS、项目数据库和图片资源管理。'
+    title: '动漫追番档案',
+    type: '动漫番剧',
+    desc: '整理追过的番剧清单、角色印象、动画风格分析和个人评分的收藏档案。',
+    problem: '追了很多番但没有系统记录，想法和感受容易遗忘。',
+    contribution: '按类型、年份和评分归档，记录每部作品最打动我的瞬间和角色。',
+    stack: ['热血', '治愈', '悬疑', '奇幻', '日常'],
+    github: '',
+    preview: '',
+    process: '从印象最深的作品开始，逐步梳理观看记录，整理成可回溯的个人番剧档案。',
+    optimize: '后续打算加入「推荐理由」和「适合什么心情看」两个维度。'
   },
   {
-    title: '个人博客档案页',
-    type: '网页作品',
-    desc: '围绕博客文章、分类筛选、搜索终端和全息阅读面板设计的沉浸式内容页面。',
-    problem: '解决文章分类不清晰、阅读入口不够有吸引力的问题。',
-    contribution: '负责博客页面排版、分类筛选、搜索交互、阅读展开面板和视觉统一。',
-    stack: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'ScrollTrigger'],
-    github: 'https://github.com/yourname/blog-archive-page',
-    preview: 'https://example.com/blog-archive',
-    process: '先拆分技术笔记、学习记录、项目复盘等内容类型，再设计终端搜索和文章卡片动效。',
-    optimize: '后续可接入 Markdown 文章详情、评论系统和真实文章数据库。'
+    title: '美食探索地图',
+    type: '美食探索',
+    desc: '记录探访过的餐厅、街边小吃、家常料理和每一次好吃体验的私藏清单。',
+    problem: '好吃的地方吃完就忘，想建立一个随时能翻的美食记忆库。',
+    contribution: '按菜系、价位和心情归类，附上每次探店的感受和必点菜推荐。',
+    stack: ['川菜', '日料', '街头小吃', '甜品', '家常'],
+    github: '',
+    preview: '',
+    process: '从常去的几家店开始记录，慢慢扩展到新探索的地方，把每次好吃的体验写下来。',
+    optimize: '后续想加地图标注，做成真正能导航的私藏美食地图。'
   },
   {
-    title: '关于我科技档案页',
-    type: '网页作品',
-    desc: '以银白金属身份芯片、左右信息卡、技能矩阵和数据流时间线构成的个人档案页面。',
-    problem: '解决个人介绍页面过于普通、信息记忆点不足的问题。',
-    contribution: '负责身份芯片建模、个人信息卡布局、技能进度动画和时间线展示。',
-    stack: ['Three.js', 'CSS', 'JavaScript', 'GSAP', 'WebGL'],
-    github: 'https://github.com/yourname/about-hud-page',
-    preview: 'https://example.com/about-hud',
-    process: '从个人档案信息出发，围绕 3D 身份核心组织姓名、职业、爱好、理念和技能内容。',
-    optimize: '后续可加入真实头像、证书资料和更多成长经历节点。'
-  },
-  {
-    title: 'AI 创作档案库',
+    title: 'AI 绘画创作库',
     type: 'AI创作',
-    desc: '整理 AI 绘画作品、提示词、灵感来源和分类标签的数字档案页面。',
-    problem: 'AI 创作素材增长快，需要建立可检索、可复盘的作品系统。',
-    contribution: '负责内容结构、视觉标签、作品归档方式和展示动效。',
-    stack: ['AI Tools', 'Web Design', 'CSS', 'JavaScript'],
-    github: 'https://github.com/yourname/ai-archive',
-    preview: 'https://example.com/ai-archive',
-    process: '先梳理作品分类和字段，再设计卡片、标签和全息阅读面板。',
-    optimize: '后续可加入图片上传、标签筛选和生成记录。'
+    desc: '整理 AI 绘画作品、提示词思路、风格参考和创作过程的个人创作档案。',
+    problem: 'AI 创作素材越来越多，需要一个可回溯、可学习的整理系统。',
+    contribution: '按风格和主题归档，记录每张作品背后的提示词逻辑和灵感来源。',
+    stack: ['二次元', '写实', '赛博朋克', '水彩', '概念艺术'],
+    github: '',
+    preview: '',
+    process: '从喜欢的动漫场景出发构思提示词，反复调整风格词和细节描述，直到画面符合直觉。',
+    optimize: '后续想建立提示词模板库，方便复用喜欢的风格。'
   },
   {
-    title: '前端动效练习场',
-    type: '前端练习',
-    desc: '集中练习卡片悬浮、滚动触发、粒子背景和响应式布局的小型实验页面。',
-    problem: '动效知识容易碎片化，需要通过小案例持续训练。',
-    contribution: '负责动画拆解、组件实现、性能检查和移动端适配。',
-    stack: ['JavaScript', 'GSAP', 'CSS', 'ScrollTrigger'],
-    github: 'https://github.com/yourname/motion-lab',
-    preview: 'https://example.com/motion-lab',
-    process: '用一个个独立 demo 验证交互，再把成熟模式沉淀到作品集中。',
-    optimize: '后续可整理为组件库和动效笔记。'
+    title: '插画收藏册',
+    type: 'AI创作',
+    desc: '收藏让我印象深刻的插画作品、参考图和个人画风探索记录。',
+    problem: '喜欢的插画风格散落各处，想系统整理成个人审美参考库。',
+    contribution: '按画风、配色和构图整理，记录每张图打动我的具体细节。',
+    stack: ['动漫风', '概念插画', '场景设计', '角色设计', '色彩研究'],
+    github: '',
+    preview: '',
+    process: '从截图和收藏图开始，整理成带标注的参考库，逐步形成自己的审美坐标系。',
+    optimize: '后续想加入自己临摹和再创作的作品对比。'
   },
   {
-    title: '品牌视觉实验',
-    type: '品牌设计',
-    desc: '围绕个人标识、霓虹色彩、信息卡片和科技 HUD 进行视觉系统探索。',
-    problem: '个人网站需要统一识别系统，避免页面风格割裂。',
-    contribution: '负责配色、版式、标签语言、徽章和视觉规范整理。',
-    stack: ['UI Design', 'CSS', 'Brand System', 'AI Tools'],
-    github: 'https://github.com/yourname/brand-lab',
-    preview: 'https://example.com/brand-lab',
-    process: '从关键词和参考风格提炼视觉元素，形成可复用的界面语言。',
-    optimize: '后续可扩展成完整个人品牌手册。'
+    title: '日常好物清单',
+    type: '日常好物',
+    desc: '记录生活中发现的好用物品、有趣 App、文具和值得推荐的小东西。',
+    problem: '用过好东西经常忘了记录，想建立一个自用推荐清单。',
+    contribution: '按类别整理，附上使用感受和适合推荐给什么人。',
+    stack: ['文具', 'App', '生活用品', '零食', '书影音'],
+    github: '',
+    preview: '',
+    process: '从手边正在用的好东西开始记录，慢慢积累成真正有参考价值的个人清单。',
+    optimize: '后续想加入「性价比」和「替代品」两个维度，让推荐更实用。'
+  },
+  {
+    title: '音乐歌单档案',
+    type: '日常好物',
+    desc: '按心情、场景和风格整理的个人歌单收藏，记录每首歌背后的感受和故事。',
+    problem: '歌单越来越多但没有情感标注，想建立有温度的音乐档案。',
+    contribution: '按心情和场景分类，记录每首歌第一次听到时的感受。',
+    stack: ['日系', 'Lo-fi', '国风', '电子', 'OST'],
+    github: '',
+    preview: '',
+    process: '从反复单曲循环的歌开始记录，整理成「清晨」「深夜」「通勤」等场景歌单。',
+    optimize: '后续想加入动漫原声 OST 专题和「让我想起某部番」的联动标注。'
   }
 ];
 
 const blogPosts = [
   {
-    title: 'Three.js 科技页面搭建笔记',
-    category: '技术笔记',
+    title: '最近在追的番：《葬送的芙莉莲》',
+    category: '番剧观后感',
     date: '2026-06-18',
-    summary: '记录 3D 数据书本、粒子背景、发光材质和响应式 WebGL 场景的实现过程。',
-    content: '从场景、相机、灯光和材质开始搭建，再用粒子和环形数据线增强空间感。重点是控制模型复杂度、处理移动端尺寸，以及让滚动动画和实时渲染保持顺滑。'
+    summary: '一部用「慢节奏」讲时间流逝的动画，每一帧都像是在问你：什么东西值得被记住？',
+    content: '芙莉莲的厉害之处在于它从不急。没有紧张的战斗节奏，却让人看完每一集都有点难受——不是悲伤，是那种"时间过得太快"的钝感。配色非常舒服，远景的处理和角色的停顿方式都有设计感。推荐给喜欢安静但有深度的故事的人。'
   },
   {
-    title: '我的前端学习阶段总结',
-    category: '学习记录',
+    title: '这家拉面让我记了好几年',
+    category: '美食日记',
     date: '2026-06-12',
-    summary: '把 HTML、CSS、JavaScript 和动画交互拆成阶段目标，形成可持续练习路径。',
-    content: '学习记录不是简单打卡，而是把知识拆成可复用模块：布局、响应式、组件思维、动效、调试和部署。每完成一个小项目，就补一份复盘。'
+    summary: '不是最贵的，不是最出名的，但就是那碗汤底让我隔几个月就想去吃一次。',
+    content: '汤是清鸡白汤，不厚重，喝完不腻。面条偏细，有嚼劲。最重要的是温度——上来的时候刚好，不会烫嘴，也不会凉掉。这种细节说明店家是认真的。叉烧偏瘦，但每片都均匀有厚度。性价比很高，下次还会去。'
   },
   {
-    title: '个人作品集页面复盘',
-    category: '项目复盘',
+    title: '用提示词「还原」了一个动漫场景',
+    category: 'AI创作记录',
     date: '2026-06-05',
-    summary: '复盘科技风视觉、Three.js 魔方、关于我页面和内容结构的制作思路。',
-    content: '项目目标是让网站第一眼有记忆点，同时保留真实可读的内容。制作过程重点处理了视觉主题、模块层级、交互节奏和中文信息展示。'
+    summary: '试着把脑子里某个动漫片段用 AI 画出来，过程比预期难，但结果很有意思。',
+    content: '参考的是某部动漫里黄昏时分、主角坐在屋顶看夕阳的场景。提示词前几次生成的都太写实或者太卡通，后来加了"cel shading, anime key visual, warm backlighting"之后味道对了很多。光影的方向和角色和背景的层次感是最难把控的，最终大概试了十几次才找到满意的版本。'
   },
   {
-    title: '灵感来自动漫、美食与日常',
-    category: '生活随笔',
+    title: '今天的碎片：电梯里的那首歌',
+    category: '日常碎片',
     date: '2026-05-28',
-    summary: '记录生活里的颜色、镜头、角色和味道，如何变成 AI 创作与网页设计素材。',
-    content: '很多创作灵感来自日常观察：一张截图的配色、一家店的灯光、一段动画的节奏。把这些碎片保存下来，之后就能变成页面、插画或提示词。'
+    summary: '在公司电梯里听到一首很久没听过的老歌，停了几秒，想起了好多东西。',
+    content: '说不清是什么歌，但就那几秒旋律让人停在原地。音乐的记忆是一种很奇怪的东西，它不按时间线触发，而是按气味和情绪。今天天气很好，午饭不错，下班路上还看见一只白猫在晒太阳。这些加在一起，是一个挺好的普通的天。'
   },
   {
-    title: '近期读书观影摘录',
-    category: '读书/观影记录',
+    title: '看完《路人女主的养成方法》的碎碎念',
+    category: '读书/观影',
     date: '2026-05-16',
-    summary: '整理书籍、电影、动画和纪录片中的叙事方法、视觉节奏与创作启发。',
-    content: '读书和观影记录更像个人素材库。除了摘录情节，也记录镜头语言、角色动机、世界观设定和视觉风格，帮助之后做 AI 创作和网页表达。'
+    summary: '一部关于「普通人想被看见」的动画，比想象中戳到我。',
+    content: '加藤惠这个角色设计很聪明——她的「普通」是刻意的，不是真的无聊。整部作品最有意思的地方不是恋爱线，而是「创作一部恋爱游戏」这个过程里每个人的自我认知在变。英梨梨和诗羽的争论其实是两种创作哲学在对话。结局没有大团圆，但很诚实。'
   },
   {
-    title: 'AI 工具如何辅助网页设计',
-    category: '技术笔记',
+    title: 'AI 画角色的时候我在想什么',
+    category: 'AI创作记录',
     date: '2026-05-02',
-    summary: '从需求描述、视觉参考、文案生成到代码实现，记录 AI 协作开发的真实流程。',
-    content: 'AI 可以辅助构思、生成方案、整理文案和检查代码，但最终仍需要人来判断审美、信息层级和体验细节。好的协作方式是让 AI 加速执行，让自己负责方向。'
+    summary: '不是在「生成图片」，更像是在用提示词做一次角色设计的草稿推演。',
+    content: '最近在用 AI 画一个自己想象中的角色——银发、冷淡气质、带点赛博感的服装。难点在于"冷淡"这个气质很难直接描述，试过 cold expression、emotionless、stoic，效果都不一样。最后发现加"sharp eyes, slight frown, distant gaze"比直接描述性格词更准确。提示词更像是在做视觉翻译，而不是写需求单。'
   }
 ];
 
@@ -332,124 +332,87 @@ function initIdentityCore() {
   const renderer = createRenderer(canvas);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
-  camera.position.z = 5;
+  camera.position.z = 5.4;
 
   const group = new THREE.Group();
   const targetRotation = { x: 0, y: 0 };
-  const ico = new THREE.Mesh(
-    new THREE.IcosahedronGeometry(1.05, 1),
-    new THREE.MeshStandardMaterial({
-      color: 0x36f2ff,
-      wireframe: true,
-      emissive: 0x1900ff,
-      emissiveIntensity: 0.28,
-      transparent: true,
-      opacity: 0.38
-    })
-  );
-  const chip = new THREE.Mesh(
-    new THREE.BoxGeometry(2.15, 1.28, 0.16),
+
+  const shell = new THREE.Mesh(
+    new THREE.SphereGeometry(1.18, 64, 64),
     new THREE.MeshPhysicalMaterial({
-      color: 0xf2f6fb,
-      metalness: 1,
-      roughness: 0.09,
-      emissive: 0x8ecfff,
-      emissiveIntensity: 0.035,
+      color: 0x9beaff,
+      metalness: 0.05,
+      roughness: 0.08,
+      transmission: 0.92,
+      transparent: true,
+      opacity: 0.3,
+      thickness: 0.7,
       clearcoat: 1,
-      clearcoatRoughness: 0.04
+      iridescence: 0.75,
+      iridescenceIOR: 1.6
     })
   );
-  const chipPlate = new THREE.Mesh(
-    new THREE.BoxGeometry(1.18, 0.54, 0.04),
-    new THREE.MeshPhysicalMaterial({
-      color: 0xffffff,
-      metalness: 0.95,
-      roughness: 0.07,
-      emissive: 0x9feaff,
-      emissiveIntensity: 0.045
-    })
+  const shellWire = new THREE.LineSegments(
+    new THREE.EdgesGeometry(new THREE.IcosahedronGeometry(1.2, 2)),
+    new THREE.LineBasicMaterial({ color: 0x69e7ff, transparent: true, opacity: 0.14 })
   );
-  chipPlate.position.z = 0.12;
-  const chipEdges = new THREE.LineSegments(
-    new THREE.EdgesGeometry(chip.geometry),
-    new THREE.LineBasicMaterial({ color: 0xf4fbff, transparent: true, opacity: 0.92 })
+  const innerCore = new THREE.Mesh(
+    new THREE.SphereGeometry(0.42, 40, 40),
+    new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.72, blending: THREE.AdditiveBlending })
   );
-  const plateEdges = new THREE.LineSegments(
-    new THREE.EdgesGeometry(chipPlate.geometry),
-    new THREE.LineBasicMaterial({ color: 0x69e7ff, transparent: true, opacity: 0.88 })
-  );
-  plateEdges.position.copy(chipPlate.position);
-  const pinMaterial = new THREE.MeshPhysicalMaterial({
-    color: 0xdce8f4,
-    metalness: 0.92,
-    roughness: 0.18,
-    emissive: 0x69e7ff,
-    emissiveIntensity: 0.1
-  });
-  const pinGeometry = new THREE.BoxGeometry(0.08, 0.18, 0.04);
-  const pins = new THREE.Group();
-  for (let i = 0; i < 8; i += 1) {
-    const x = -0.88 + i * 0.25;
-    const topPin = new THREE.Mesh(pinGeometry, pinMaterial);
-    topPin.position.set(x, 0.78, 0.02);
-    const bottomPin = new THREE.Mesh(pinGeometry, pinMaterial);
-    bottomPin.position.set(x, -0.78, 0.02);
-    pins.add(topPin, bottomPin);
-  }
-  for (let i = 0; i < 4; i += 1) {
-    const y = -0.36 + i * 0.24;
-    const leftPin = new THREE.Mesh(pinGeometry, pinMaterial);
-    leftPin.rotation.z = Math.PI / 2;
-    leftPin.position.set(-1.22, y, 0.02);
-    const rightPin = new THREE.Mesh(pinGeometry, pinMaterial);
-    rightPin.rotation.z = Math.PI / 2;
-    rightPin.position.set(1.22, y, 0.02);
-    pins.add(leftPin, rightPin);
-  }
-  const circuitMaterial = new THREE.LineBasicMaterial({ color: 0x36f2ff, transparent: true, opacity: 0.82 });
-  const circuits = new THREE.Group();
-  [
-    [[-0.75, 0.22, 0.11], [-0.22, 0.22, 0.11], [-0.22, 0.48, 0.11]],
-    [[0.7, -0.18, 0.11], [0.18, -0.18, 0.11], [0.18, -0.45, 0.11]],
-    [[-0.52, -0.38, 0.11], [-0.08, -0.08, 0.11], [0.48, -0.08, 0.11]],
-    [[0.52, 0.38, 0.11], [0.12, 0.08, 0.11], [-0.48, 0.08, 0.11]]
-  ].forEach((points) => {
-    circuits.add(
-      new THREE.Line(
-        new THREE.BufferGeometry().setFromPoints(points.map(([x, y, z]) => new THREE.Vector3(x, y, z))),
-        circuitMaterial
-      )
+
+  const orbitGroup = new THREE.Group();
+  const orbitColors = [0x36f2ff, 0xff3cac, 0xffb347, 0x62f7a5];
+  orbitColors.forEach((color, index) => {
+    const orbit = new THREE.Mesh(
+      new THREE.TorusGeometry(1.48 + index * 0.18, 0.012 + index * 0.002, 8, 180),
+      new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.72, blending: THREE.AdditiveBlending })
     );
+    orbit.rotation.set(0.38 + index * 0.46, 0.2 + index * 0.62, index * 0.34);
+    orbit.userData.speed = index % 2 ? -0.0025 - index * 0.0003 : 0.002 + index * 0.0003;
+    orbitGroup.add(orbit);
+
+    const node = new THREE.Mesh(
+      new THREE.SphereGeometry(0.055, 16, 16),
+      new THREE.MeshBasicMaterial({ color, blending: THREE.AdditiveBlending })
+    );
+    node.position.set(1.48 + index * 0.18, 0, 0);
+    orbit.add(node);
   });
-  const particleGeometry = new THREE.BufferGeometry();
-  const particleCount = 180;
-  const particlePositions = new Float32Array(particleCount * 3);
-  for (let i = 0; i < particleCount; i += 1) {
-    const radius = 1.4 + Math.random() * 1.45;
-    const angle = Math.random() * Math.PI * 2;
-    particlePositions[i * 3] = Math.cos(angle) * radius;
-    particlePositions[i * 3 + 1] = (Math.random() - 0.5) * 2.8;
-    particlePositions[i * 3 + 2] = Math.sin(angle) * radius;
-  }
-  particleGeometry.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
-  const particles = new THREE.Points(
-    particleGeometry,
-    new THREE.PointsMaterial({
-      color: 0x69e7ff,
-      size: 0.025,
-      transparent: true,
-      opacity: 0.76,
-      blending: THREE.AdditiveBlending
-    })
-  );
-  group.add(chip, chipPlate, chipEdges, plateEdges, pins, circuits, ico, particles);
+
+  const particleClouds = new THREE.Group();
+  orbitColors.forEach((color, band) => {
+    const count = 110;
+    const positions = new Float32Array(count * 3);
+    for (let i = 0; i < count; i += 1) {
+      const progress = i / count;
+      const angle = progress * Math.PI * 8 + band * 1.6 + Math.random() * 0.35;
+      const radius = 0.52 + progress * 1.28 + band * 0.025;
+      positions[i * 3] = Math.cos(angle) * radius;
+      positions[i * 3 + 1] = (progress - 0.5) * 1.75 + Math.sin(angle * 0.5) * 0.18;
+      positions[i * 3 + 2] = Math.sin(angle) * radius;
+    }
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    const cloud = new THREE.Points(
+      geometry,
+      new THREE.PointsMaterial({ color, size: 0.035, transparent: true, opacity: 0.82, depthWrite: false, blending: THREE.AdditiveBlending })
+    );
+    cloud.rotation.z = band * 0.48;
+    particleClouds.add(cloud);
+  });
+
+  group.add(shell, shellWire, innerCore, orbitGroup, particleClouds);
   scene.add(group);
-  const coreLight = new THREE.PointLight(0xffffff, 3.2, 10);
-  coreLight.position.set(2, 2, 4);
+
+  const coreLight = new THREE.PointLight(0xffffff, 4.2, 10);
+  coreLight.position.set(0, 0, 2);
   scene.add(coreLight);
-  const rimLight = new THREE.PointLight(0x69e7ff, 2.6, 12);
-  rimLight.position.set(-3, -1.5, 3);
-  scene.add(rimLight);
+  const cyanLight = new THREE.PointLight(0x36f2ff, 3, 12);
+  cyanLight.position.set(-3, 2, 3);
+  const pinkLight = new THREE.PointLight(0xff3cac, 2.8, 12);
+  pinkLight.position.set(3, -2, 3);
+  scene.add(cyanLight, pinkLight);
 
   const resize = () => sizeRenderer(renderer, camera);
   window.addEventListener('resize', resize);
@@ -461,7 +424,7 @@ function initIdentityCore() {
   });
 
   gsap.to(group.rotation, {
-    z: Math.PI * 1.2,
+    z: Math.PI * 0.45,
     scrollTrigger: {
       trigger: '#about',
       start: 'top bottom',
@@ -471,9 +434,14 @@ function initIdentityCore() {
   });
 
   function animate() {
-    group.rotation.x += 0.006 + (targetRotation.x - group.rotation.x) * 0.01;
-    group.rotation.y += 0.009 + (targetRotation.y - group.rotation.y) * 0.01;
-    particles.rotation.y -= 0.003;
+    group.rotation.x += (targetRotation.x - group.rotation.x) * 0.025;
+    group.rotation.y += 0.003 + (targetRotation.y - group.rotation.y) * 0.018;
+    shellWire.rotation.y -= 0.0018;
+    orbitGroup.children.forEach((orbit) => { orbit.rotation.z += orbit.userData.speed; });
+    particleClouds.rotation.y -= 0.0025;
+    particleClouds.rotation.z += 0.0008;
+    const pulse = 1 + Math.sin(performance.now() * 0.0022) * 0.045;
+    innerCore.scale.setScalar(pulse);
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
   }
@@ -1060,14 +1028,12 @@ function renderProjects() {
           <h3>${project.title}</h3>
           <p>${project.desc}</p>
           <dl class="project-card-meta">
-            <div><dt>解决</dt><dd>${project.problem}</dd></div>
-            <div><dt>贡献</dt><dd>${project.contribution}</dd></div>
+            <div><dt>缘起</dt><dd>${project.problem}</dd></div>
+            <div><dt>整理</dt><dd>${project.contribution}</dd></div>
           </dl>
           <div class="tag-row">${project.stack.map((tag) => `<b>${tag}</b>`).join('')}</div>
           <div class="project-card-actions">
-            <a class="btn ghost pulse-link" href="${project.github}" target="_blank" rel="noreferrer">源码</a>
-            <a class="btn primary pulse-link" href="${project.preview}" target="_blank" rel="noreferrer">预览</a>
-            <button class="btn ghost" type="button">全息详情</button>
+            <button class="btn ghost" type="button">收藏详情</button>
           </div>
         </article>
       `
@@ -1079,8 +1045,6 @@ function renderProjects() {
   const type = document.querySelector('#modal-type');
   const desc = document.querySelector('#modal-desc');
   const tags = document.querySelector('#modal-tags');
-  const link = document.querySelector('#modal-link');
-  const preview = document.querySelector('#modal-preview');
   const details = document.querySelector('#modal-details');
 
   grid.querySelectorAll('.project-card').forEach((card) => {
@@ -1091,15 +1055,12 @@ function renderProjects() {
       type.textContent = project.type;
       desc.textContent = project.desc;
       tags.innerHTML = project.stack.map((tag) => `<span>${tag}</span>`).join('');
-      link.href = project.github;
-      preview.href = project.preview;
       details.innerHTML = `
-        <div><strong>项目背景</strong><p>${project.desc}</p></div>
-        <div><strong>核心功能</strong><p>项目展示、内容归档、筛选交互、视觉动效和响应式访问。</p></div>
-        <div><strong>解决的问题</strong><p>${project.problem}</p></div>
-        <div><strong>我的贡献</strong><p>${project.contribution}</p></div>
-        <div><strong>开发过程</strong><p>${project.process}</p></div>
-        <div><strong>优化方向</strong><p>${project.optimize}</p></div>
+        <div><strong>收藏背景</strong><p>${project.desc}</p></div>
+        <div><strong>为什么收藏</strong><p>${project.problem}</p></div>
+        <div><strong>整理方式</strong><p>${project.contribution}</p></div>
+        <div><strong>收藏过程</strong><p>${project.process}</p></div>
+        <div><strong>后续计划</strong><p>${project.optimize}</p></div>
       `;
       modal.classList.add('is-open');
       modal.setAttribute('aria-hidden', 'false');
@@ -1123,7 +1084,7 @@ function initProjectFilters() {
       filter.classList.add('is-active');
       const category = filter.dataset.category;
       document.querySelectorAll('#project-grid .project-card').forEach((card) => {
-        const shouldShow = category === '全部项目' || card.dataset.category === category;
+        const shouldShow = category === '全部收藏' || card.dataset.category === category;
         card.classList.toggle('is-hidden', !shouldShow);
         if (shouldShow) {
           gsap.fromTo(card, { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 0.36, ease: 'power2.out' });

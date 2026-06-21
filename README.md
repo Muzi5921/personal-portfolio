@@ -2,45 +2,46 @@
 
 个人作品集 3.0，基于 Vite、Three.js 和 GSAP 构建。
 
+## 项目结构
+
+```text
+├─ public/
+│  ├─ documents/     PDF 文档
+│  ├─ images/        图片资源
+│  └─ media/         视频等媒体资源
+├─ src/
+│  ├─ archives-intro.js
+│  ├─ main.js
+│  └─ styles.css
+├─ index.html        页面入口
+├─ package.json      项目依赖与命令
+└─ vite.config.js    Vite 配置
+```
+
+`dist/` 是构建输出，`node_modules/` 是本地依赖，两者均无需手动编辑。
+
 ## 本地运行
 
 ```powershell
-npm.cmd install
-npm.cmd run dev
+npm install
+npm run dev
 ```
 
-打开：
+打开 `http://localhost:5173`。
 
-```text
-http://localhost:5173
-```
-
-## 构建发布文件
+## 构建与预览
 
 ```powershell
-npm.cmd run build
+npm run build
+npm run preview
 ```
 
-构建产物会输出到 `dist/`。
+构建产物输出到 `dist/`，预览地址为 `http://localhost:4173`。
 
-## 本地预览发布版
+## 部署
 
-```powershell
-npm.cmd run preview
-```
+可部署到 Vercel、Netlify、Cloudflare Pages 或 GitHub Pages：
 
-打开：
-
-```text
-http://localhost:4173
-```
-
-## 重新部署建议
-
-可以把本项目推到 GitHub，然后用 Vercel、Netlify、Cloudflare Pages 或 GitHub Pages 部署。
-
-常见配置：
-
-- Build command: `npm.cmd run build` 或 `npm run build`
-- Output directory: `dist`
-- Install command: `npm.cmd install` 或 `npm install`
+- 构建命令：`npm run build`
+- 输出目录：`dist`
+- 安装命令：`npm install`
